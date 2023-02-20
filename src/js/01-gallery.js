@@ -4,10 +4,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-
-
-
-
+console.log(galleryItems);
 const gallery = document.querySelector('.gallery')
 const galeryList = galleryItems.map(item => {
     return `
@@ -22,6 +19,5 @@ const galeryList = galleryItems.map(item => {
 }).join(' ');
 gallery.insertAdjacentHTML('beforeend', galeryList)
 
- const lightbox = new SimpleLightbox('.gallery a', {  captionsData: 'alt',  captionDelay: 250,});
+const lightbox = new SimpleLightbox('.gallery a', {  captionsData: 'alt',  captionDelay: 250,});
 
-console.log(galleryItems);
