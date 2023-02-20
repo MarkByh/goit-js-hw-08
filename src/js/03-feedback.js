@@ -26,7 +26,7 @@ const formSubmit = function(event) {
     }
     console.log(formObj);
     event.currentTarget.reset();
-    // localStorage.removeItem(FEEDBACK_FORM);
+    localStorage.removeItem(formKey);
 }
 
 form.addEventListener('input', throttle(formInput, 500));
